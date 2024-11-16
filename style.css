@@ -175,7 +175,7 @@ body {
 /* -------------------------- Navbar Container End -------------------------- */
 
 /* --------------------------- Hero Section Start --------------------------- */
-.hero-section {
+#hero-section {
     padding: 50px 0px;
     display: flex;
     width: 90%;
@@ -266,7 +266,7 @@ body {
 /* --------------------------- Hero Section End --------------------------- */
 
 /* --------------------------- Skills Section Start -------------------------- */
-.skills {
+#skills {
     padding: 40px 20px;
     background-color: var(--primary-color);
     text-align: center;
@@ -278,7 +278,7 @@ body {
     margin: auto;
 }
 
-.skills h2 {
+#skills h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
     color: white;
@@ -357,13 +357,13 @@ body {
 /* --------------------------- Skills Section End -------------------------- */
 
 /* -------------------------- Project Section Start ------------------------- */
-.projects {
+#projects {
     padding: 60px 20px;
     text-align: center;
     background: #f8f9fa;
 }
 
-.projects h2 {
+#projects h2 {
     font-size: 3em;
     margin-bottom: 40px;
     color: #333;
@@ -483,13 +483,13 @@ body {
         flex: 1 1 calc(100% - 20px);
     }
 
-    .projects h2 {
+    #projects h2 {
         font-size: 2.5em;
     }
 }
 
 @media (max-width: 480px) {
-    .projects h2 {
+    #projects h2 {
         font-size: 2em;
     }
 
@@ -502,7 +502,7 @@ body {
 
 
 /* -------------------------- Contact Section Start ------------------------- */
-.contact {
+#contact {
     padding: 40px 20px;
     background-color: var(--primary-color);
     color: white;
