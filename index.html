@@ -5,11 +5,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Arbaz Ansari Portfolio</title>
         <link rel="stylesheet" href="./style.css" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </head>
     <body>
         <header class="navbar-container">
             <nav class="navbar">
-                <div class="logo">
+                <div class="logo" data-aos="fade">
                     <a href="/"><span>Arbaz Ansari</span></a>
                 </div>
 
@@ -29,8 +34,11 @@
                 </ul>
 
                 <!-- Social Media Icons -->
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/erarbazansari/" target="_blank"
+
+                <div class="social-icons" data-aos="fade">
+                    <a
+                        href="https://www.linkedin.com/in/erarbazansari/"
+                        target="_blank"
                         ><img
                             class="fab fa-linkedin"
                             src="../images/socialMedia/linkedin.png"
@@ -49,9 +57,11 @@
                 <div class="hero-container">
                     <div class="hero-text">
                         <p class="intro-text">
-                            Hi! I'm <span>Arbaz Ansari</span>
+                            Hi! I'm <span data-aos="fade">Arbaz Ansari</span>
                         </p>
-                        <h1 class="hero-title">Software Developer</h1>
+                        <h1 class="hero-title" data-aos="fade">
+                            Software Developer
+                        </h1>
                         <p class="hero-description">
                             A passionate coder, problem-solver, and tech
                             enthusiast. As a final-year Computer Science student
@@ -59,11 +69,24 @@
                             efficient and scalable solutions that bridge
                             creativity with functionality.
                         </p>
-                        <a href="https://drive.google.com/file/d/1c8a84JlVrPf5qYNZaIps2UqRv7yUncn6/view?usp=sharing" target="_blank"><button class="view-btn">View Resume</button></a>
+
+                        <div data-aos="fade-up">
+                            <a
+                                href="https://drive.google.com/file/d/1c8a84JlVrPf5qYNZaIps2UqRv7yUncn6/view?usp=sharing"
+                                target="_blank"
+                                ><button class="view-btn">
+                                    View Resume
+                                </button></a
+                            >
+                        </div>
                     </div>
 
                     <!-- Image Section -->
-                    <div class="hero-image">
+                    <div
+                        class="hero-image"
+                        data-aos="fade-up"
+                        data-aos="bounce"
+                    >
                         <img
                             src="../images/myImages/1.png"
                             alt="Arbaz Ansari"
@@ -74,12 +97,17 @@
 
             <section id="skills">
                 <div class="skills-content">
-                    <h2>Skills</h2>
-                    <div class="my-skills">
-                        <div class="card">
+                    <h2 data-aos="fade">Skills</h2>
+                    <div class="my-skills" data-aos="fade">
+                        <div
+                            class="card"
+                            data-aos="fade-up"
+                            data-aos-delay="50"
+                        >
                             <img
                                 src="./images/skills/frontend.png"
                                 alt="Frontend"
+                                data-aos="fade"
                             />
                             <h3>Frontend</h3>
                             <ul>
@@ -91,7 +119,11 @@
                                 <li>NextJs</li>
                             </ul>
                         </div>
-                        <div class="card">
+                        <div
+                            class="card"
+                            data-aos="fade-up"
+                            data-aos-delay="100"
+                        >
                             <img
                                 src="./images/skills/backend.png"
                                 alt="Backend"
@@ -106,7 +138,11 @@
                                 <li>Flask</li>
                             </ul>
                         </div>
-                        <div class="card">
+                        <div
+                            class="card"
+                            data-aos="fade-up"
+                            data-aos-delay="150"
+                        >
                             <img
                                 src="./images/skills/database-storage.png"
                                 alt="Databases"
@@ -126,10 +162,10 @@
             </section>
 
             <section id="projects">
-                <h2>Recent Projects</h2>
+                <h2 data-aos="fade">Recent Projects</h2>
                 <div class="project-cards">
                     <!-- Card 1 -->
-                    <div class="card">
+                    <div class="card" data-aos="fade-up">
                         <div class="card-inner">
                             <div class="card-front">
                                 <img
@@ -143,18 +179,20 @@
                                 <a
                                     href="https://recipes-app-arbazansari.vercel.app/"
                                     class="btn"
+                                    target="_blank"
                                     >Live Demo</a
                                 >
                                 <a
                                     href="https://github.com/ErArbazAnsari/Recipes-App-Using-NextJs"
                                     class="btn"
+                                    target="_blank"
                                     >GitHub</a
                                 >
                             </div>
                         </div>
                     </div>
                     <!-- Card 2 -->
-                    <div class="card">
+                    <div class="card" data-aos="fade-up" data-aos-delay="50">
                         <div class="card-inner">
                             <div class="card-front">
                                 <img
@@ -168,11 +206,13 @@
                                 <a
                                     href="https://mytodos-arbazansari.netlify.app/"
                                     class="btn"
+                                    target="_blank"
                                     >Live Demo</a
                                 >
                                 <a
                                     href="https://github.com/ErArbazAnsari/Best-Todos-App"
                                     class="btn"
+                                    target="_blank"
                                     >GitHub</a
                                 >
                             </div>
@@ -180,7 +220,7 @@
                     </div>
 
                     <!-- Card 3 -->
-                    <div class="card">
+                    <div class="card" data-aos="fade-up" data-aos-delay="100">
                         <div class="card-inner">
                             <div class="card-front">
                                 <img
@@ -194,11 +234,13 @@
                                 <a
                                     href="https://erarbazansari.github.io/BookMyShow-Website-Frontend-Clone/"
                                     class="btn"
+                                    target="_blank"
                                     >Live Demo</a
                                 >
                                 <a
                                     href="https://github.com/ErArbazAnsari/BookMyShow-Website-Frontend-Clone"
                                     class="btn"
+                                    target="_blank"
                                     >GitHub</a
                                 >
                             </div>
@@ -206,7 +248,7 @@
                     </div>
 
                     <!-- Card 4 -->
-                    <div class="card">
+                    <div class="card" data-aos="fade-up" data-aos-delay="150">
                         <div class="card-inner">
                             <div class="card-front">
                                 <img
@@ -224,11 +266,13 @@
                                 <a
                                     href="https://countryinfo-arbaz.netlify.app/"
                                     class="btn"
+                                    target="_blank"
                                     >Live Demo</a
                                 >
                                 <a
                                     href="https://github.com/ErArbazAnsari/Country-Info"
                                     class="btn"
+                                    target="_blank"
                                     >GitHub</a
                                 >
                             </div>
@@ -236,7 +280,7 @@
                     </div>
 
                     <!-- Card 5 -->
-                    <div class="card">
+                    <div class="card" data-aos="fade-up" data-aos-delay="200">
                         <div class="card-inner">
                             <div class="card-front">
                                 <img
@@ -253,11 +297,13 @@
                                 <a
                                     href="https://weather-erarbazansari.netlify.app/"
                                     class="btn"
+                                    target="_blank"
                                     >Live Demo</a
                                 >
                                 <a
                                     href="https://github.com/ErArbazAnsari/Weather-App"
                                     class="btn"
+                                    target="_blank"
                                     >GitHub</a
                                 >
                             </div>
@@ -265,7 +311,7 @@
                     </div>
 
                     <!-- Card 6 -->
-                    <div class="card">
+                    <div class="card" data-aos="fade-up" data-aos-delay="250">
                         <div class="card-inner">
                             <div class="card-front">
                                 <img
@@ -281,11 +327,13 @@
                                 <a
                                     href="https://passwordgenerator-erarbazansari.netlify.app/"
                                     class="btn"
+                                    target="_blank"
                                     >Live Demo</a
                                 >
                                 <a
                                     href="https://github.com/ErArbazAnsari/Password-Generator"
                                     class="btn"
+                                    target="_blank"
                                     >GitHub</a
                                 >
                             </div>
@@ -296,12 +344,12 @@
 
             <section id="contact">
                 <div class="contact_us_2">
-                    <h2 class="contactus-head">Contact Us</h2>
-                    <p class="contactus-subhead">
+                    <h2 class="contactus-head" data-aos="fade">Contact Us</h2>
+                    <p class="contactus-subhead" data-aos="fade">
                         Please fill out the form below to get in touch.
                     </p>
-                    <div class="form-box">
-                        <form>
+                    <div class="form-box" >
+                        <form data-aos="fade">
                             <div class="form-group">
                                 <label for="name" class="input-title"
                                     >Name</label
@@ -350,29 +398,34 @@
                 <div class="footer-section links">
                     <h3>Quick Links</h3>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="/">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-section social">
                     <h3>Follow Us</h3>
                     <div class="social-links">
-                        <a href="https://github.com/ErArbazAnsari"
+                        <a
+                            href="https://github.com/ErArbazAnsari"
+                            target="_blank"
                             ><img
                                 src="./images/socialMedia/github.png"
                                 alt="github"
                                 class="link-img"
                         /></a>
-                        <a href="https://linkedin/in/erarbazansari"
+                        <a
+                            href="https://linkedin.com/in/erarbazansari/"
+                            target="_blank"
                             ><img
                                 src="./images/socialMedia/newlinkedin.png"
                                 alt="LinkedIn"
                                 class="link-img"
                         /></a>
-                        <a href="https://instagram/erarbazansari"
+                        <a
+                            href="https://www.instagram.com/erarbazansari/"
+                            target="_blank"
                             ><img
                                 src="./images/socialMedia/nninstagram.png"
                                 alt="Instagram"
@@ -390,6 +443,11 @@
             // Toggle the 'active' class on click
             hamburger.addEventListener("click", () => {
                 navLinks.classList.toggle("active");
+            });
+
+            // for animation
+            AOS.init({
+                duration: 1200,
             });
         </script>
     </body>
