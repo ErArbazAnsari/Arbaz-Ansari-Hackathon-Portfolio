@@ -30,7 +30,8 @@ body {
     z-index: 1000;
     background: #f6f5f0;
     margin: auto;
-    padding: 1rem 2rem; /* Reduced padding */
+    padding: 1rem 2rem;
+    /* Reduced padding */
     box-shadow: 0 2px 5px var(--primary-color);
 }
 
@@ -38,7 +39,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%; /* Adjusted width */
+    width: 100%;
+    /* Adjusted width */
     margin: 0 auto;
     position: relative;
     gap: 20px;
@@ -55,7 +57,8 @@ body {
 }
 
 .logo {
-    white-space: nowrap; /* Prevent wrapping */
+    white-space: nowrap;
+    /* Prevent wrapping */
     font-size: 1.5rem;
     font-weight: bold;
     color: var(--primary-color);
@@ -328,15 +331,24 @@ body {
 
 .card:hover {
     transform: translateY(-10px);
-    /* transform: scale(1.03); */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px #007bb947;
+    /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); */
     cursor: pointer;
+
+    &.card img{
+        background-color: #30baff74;
+    }
+
+    background-color: #e7f7ff;
 }
 
 .card img {
     max-width: 100px;
     min-height: 100px;
     margin-bottom: 15px;
+    background-color: #007bb947;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 .card h3 {
@@ -521,6 +533,31 @@ body {
     .card {
         height: auto;
     }
+}
+
+
+.more-projects {
+    padding-top: 40px;
+}
+
+.more-projects button {
+    padding: 15px 30px;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: all .3s;
+}
+
+.more-projects button:hover {
+    background-color: var(--primary-color-hover);
+    transform: scale(1.1);
+}
+
+.more-projects button:active {
+    background-color: var(--primary-color);
 }
 
 /* -------------------------- Project Section End ------------------------- */
